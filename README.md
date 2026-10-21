@@ -1,11 +1,10 @@
 # ⚡ 테슬라(TSLA) 실시간 주가 & 관련 뉴스 수집 대시보드
 
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-agy--liart.vercel.app-000000?style=for-the-badge&logo=vercel)](https://agy-liart.vercel.app)
 [![GitHub Repo](https://img.shields.io/badge/GitHub-Repository-181717?logo=github)](https://github.com/Shawn-kcs/tesla-live-tracker)
 [![Node.js](https://img.shields.io/badge/Node.js-v20%2B-339933?logo=node.js)](https://nodejs.org/)
-[![Docker](https://img.shields.io/badge/Docker-Ready-2496ED?logo=docker)](https://www.docker.com/)
-[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
 
-테슬라(Tesla, Inc.)의 실시간 나스닥 주가 정보와 관련 언론사 최신 뉴스 10개를 실시간으로 자동 수집하여 시각화해 주는 웹 애플리케이션 및 서버입니다.
+👉 **실시간 라이브 웹사이트: [https://agy-liart.vercel.app](https://agy-liart.vercel.app)**
 
 ---
 
