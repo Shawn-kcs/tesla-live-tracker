@@ -1,0 +1,24 @@
+{
+  "name": "agy-tesla-live",
+  "version": "1.0.0",
+  "description": "테슬라(TSLA) 실시간 주가 및 관련 뉴스 10개 실시간 수집 대시보드",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "keywords": [
+    "tesla",
+    "tsla",
+    "stock",
+    "news",
+    "realtime"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "fast-xml-parser": "^4.5.3"
+  }
+}
