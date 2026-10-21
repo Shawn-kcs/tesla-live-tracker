@@ -344,7 +344,7 @@
 
   async function fetchNews(lang = state.lang) {
     try {
-      const res = await fetch(`/api/news?lang=${lang}&limit=10`);
+      const res = await fetch(`/api/news?lang=${lang}&limit=20`);
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       const data = await res.json();
       state.allNews = data.items || [];

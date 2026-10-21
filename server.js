@@ -193,7 +193,7 @@ function cleanText(text) {
 app.get('/api/news', async (req, res) => {
   try {
     const lang = req.query.lang === 'en' ? 'en' : 'ko';
-    const limit = Math.min(parseInt(req.query.limit, 10) || 10, 20);
+    const limit = Math.min(parseInt(req.query.limit, 10) || 20, 30);
     const cacheKey = `news_${lang}`;
     const now = Date.now();
 
@@ -224,7 +224,7 @@ app.get('/api/news', async (req, res) => {
     const rawItems = parsed?.rss?.channel?.item || [];
     const itemsList = Array.isArray(rawItems) ? rawItems : [rawItems];
 
-    const processedItems = itemsList.slice(0, 20).map((item, idx) => {
+    const processedItems = itemsList.slice(0, 30).map((item, idx) => {
       const rawTitle = cleanText(item.title || '');
       let title = rawTitle;
       let sourceName = '';
