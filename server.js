@@ -295,9 +295,13 @@ app.use((req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
-app.listen(PORT, () => {
-  console.log(`===============================================`);
-  console.log(`🚀 테슬라 실시간 주가 & 뉴스 서버 실행 완료!`);
-  console.log(`🌐 접속 주소: http://localhost:${PORT}`);
-  console.log(`===============================================`);
-});
+if (!process.env.VERCEL) {
+  app.listen(PORT, () => {
+    console.log(`===============================================`);
+    console.log(`🚀 테슬라 실시간 주가 & 뉴스 서버 실행 완료!`);
+    console.log(`🌐 접속 주소: http://localhost:${PORT}`);
+    console.log(`===============================================`);
+  });
+}
+
+module.exports = app;
